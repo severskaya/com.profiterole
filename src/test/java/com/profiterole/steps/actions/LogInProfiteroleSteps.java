@@ -1,4 +1,4 @@
-package com.profiterole.steps;
+package com.profiterole.steps.actions;
 
 import com.profiterole.pages.LogInProfiterolePage;
 import net.thucydides.core.annotations.Step;

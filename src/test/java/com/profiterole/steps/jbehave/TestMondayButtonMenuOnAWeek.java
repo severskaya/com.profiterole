@@ -1,9 +1,9 @@
-package com.profiterole.jbehave;
+package com.profiterole.steps.jbehave;
 
 
-import com.profiterole.steps.CreateMenuDropDownSteps;
-import com.profiterole.steps.MenuOnAWeekSteps;
-import com.profiterole.steps.ProfiteroleHomeSteps;
+import com.profiterole.steps.actions.CreateMenuDropDownSteps;
+import com.profiterole.steps.actions.MenuOnAWeekSteps;
+import com.profiterole.steps.actions.ProfiteroleHomeSteps;
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;

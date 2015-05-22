@@ -1,4 +1,4 @@
-package com.profiterole.steps;
+package com.profiterole.steps.actions;
 
 import com.profiterole.pages.RecipesDropDownPage;
 import net.thucydides.core.annotations.Step;
@@ -23,7 +23,7 @@ public class RecipesDropDownSteps extends ScenarioSteps {
 
     @Step
     public void assertThatCuisinesAreVisibleForUser() {
-        assertEquals("Кухни не видны пользователю", informationFromAllCuisinesPage, recipesDropDownPage.getTextFromAllCuisinePage().getText());
+        assertEquals("Кухни не видны пользователю", informationFromAllCuisinesPage, recipesDropDownPage.getTextFromAllCuisinePage().getValue());
     }
 
     @Step

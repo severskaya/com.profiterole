@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Sample Serenity project using JBehave and WebDriver</name>
+    <name>Profiterole Project</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>1.7.7</version>
+            <version>1.7.12</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -71,7 +71,7 @@
                         <include>**/Given*.java</include>
                         <include>**/When*.java</include>
                         <include>**/Then*.java</include>
-                        <!--<include>**/*Story.java</include>-->
+                        <include>**/*Story.java</include>
                     </includes>
                     <argLine>-Xmx512m</argLine>
                     <parallel>classes</parallel>

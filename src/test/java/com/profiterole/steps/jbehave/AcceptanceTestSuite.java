@@ -1,4 +1,4 @@
-package com.profiterole.jbehave;
+package com.profiterole.steps.jbehave;
 
 import net.serenitybdd.jbehave.SerenityStories;
 

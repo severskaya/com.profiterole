@@ -1,10 +1,10 @@
-package com.profiterole.jbehave;
+package com.profiterole.steps.jbehave;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import net.thucydides.core.annotations.Steps;
-import com.profiterole.steps.ProfiteroleHomeSteps;
+import com.profiterole.steps.actions.ProfiteroleHomeSteps;
 
 public class TestAboutUsButton {
 

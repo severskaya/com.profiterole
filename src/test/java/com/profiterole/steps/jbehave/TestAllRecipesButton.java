@@ -1,14 +1,14 @@
-package com.profiterole.jbehave;
+package com.profiterole.steps.jbehave;
 
 
-import com.profiterole.steps.ProfiteroleHomeSteps;
-import com.profiterole.steps.RecipesDropDownSteps;
+import com.profiterole.steps.actions.ProfiteroleHomeSteps;
+import com.profiterole.steps.actions.RecipesDropDownSteps;
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-public class TestCreateRecipeButton {
+public class TestAllRecipesButton {
 
     @Steps
     private ProfiteroleHomeSteps profiteroleHomeSteps;
@@ -26,14 +26,14 @@ public class TestCreateRecipeButton {
         profiteroleHomeSteps.clickRecipesButton();
     }
 
-    @When("the user clicks on Create Recipe Button")
-    public void whenUserClicksCreateRecipeButton(){
-        recipesDropDownSteps.clickCreateRecipeButton();
+    @When("the user clicks on All Recipes Button")
+    public void whenUserClicksAllRecipesButton(){
+        recipesDropDownSteps.clickAllRecipesButton();
     }
 
-    @Then("the user should see the page where he can createhis own recipe")
-    public void thenShouldSeeCreateRecipePage(){
-        recipesDropDownSteps.assertThatCreateRecipePageIsVisible();
+    @Then("the user should see all cuisines")
+    public void thenUserShouldSeeAllCuisines(){
+        recipesDropDownSteps.assertThatCuisinesAreVisibleForUser();
     }
 
 }

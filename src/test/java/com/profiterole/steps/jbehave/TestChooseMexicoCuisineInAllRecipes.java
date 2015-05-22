@@ -1,14 +1,15 @@
-package com.profiterole.jbehave;
+package com.profiterole.steps.jbehave;
 
-import com.profiterole.steps.ProfiteroleCuisineSteps;
-import com.profiterole.steps.ProfiteroleHomeSteps;
-import com.profiterole.steps.RecipesDropDownSteps;
+
+import com.profiterole.steps.actions.ProfiteroleCuisineSteps;
+import com.profiterole.steps.actions.ProfiteroleHomeSteps;
+import com.profiterole.steps.actions.RecipesDropDownSteps;
 import net.thucydides.core.annotations.Steps;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-public class TestChooseShanksInUkrainianCuisine {
+public class TestChooseMexicoCuisineInAllRecipes {
 
     @Steps
     private ProfiteroleCuisineSteps profiteroleCuisineSteps;
@@ -34,19 +35,14 @@ public class TestChooseShanksInUkrainianCuisine {
         recipesDropDownSteps.clickAllRecipesButton();
     }
 
-    @Given("the user clicks on Ukrainian cuisine")
-    public void givenClicksOnUkrainianCuisine(){
-        profiteroleCuisineSteps.chooseCuisine("Украинская");
+    @When("the user clicks on Mexico cuisine")
+    public void whenClicksMexicoCuisine(){
+        profiteroleCuisineSteps.chooseCuisine("Мексиканская");
     }
 
-    @When("the user clicks on 'Закуски'")
-    public void whenClicksOnSnaksButton(){
-        profiteroleCuisineSteps.clickOnShackButtonInUkrainianCuisine();
-    }
-
-    @Then("he should see list with Ukrainian recipes")
-    public void thenShouldSeeListWithUkrainianRecipes(){
-        profiteroleCuisineSteps.assertThatUkrainianSnacksIsVisible();
+    @Then("the user should see the page with all Mexico dishes")
+    public void thenShouldSeeMexicoDishesPage(){
+        profiteroleCuisineSteps.assertThatMexicoDishesPageIsVisible();
     }
 
 }
