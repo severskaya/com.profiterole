@@ -13,8 +13,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>1.0.47</serenity.version>
         <serenity.jbehave.version>1.0.18</serenity.jbehave.version>
-        <webdriver.driver>firefox</webdriver.driver>
-        <webdriver.chrome.driver>/home/severskaya/Desktop/chromedriver</webdriver.chrome.driver>
+        <webdriver.driver>chrome</webdriver.driver>
+        <webdriver.chrome.driver>/home/nsieverska/Desktop/chromedriver</webdriver.chrome.driver>
     </properties>
 
     <dependencies>

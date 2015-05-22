@@ -24,6 +24,5 @@ public class TestAboutUsButton {
     @Then("the user should see page with words 'About Us'")
     public void thenUserIsOnAboutUsPage(){
         profiteroleSteps.iskAboutUsPageWasOpened();
-//        profiteroleSteps.closePage();
     }
 }

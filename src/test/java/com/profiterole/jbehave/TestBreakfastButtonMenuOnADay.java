@@ -25,7 +25,7 @@ public class TestBreakfastButtonMenuOnADay {
     }
 
     @Given("the user clicks on Create Menu Button")
-    public void givenClicksCreatemenuButon(){
+    public void givenClicksCreateMenuButon(){
         profiteroleHomeSteps.clickCreateMenuButton();
     }
 

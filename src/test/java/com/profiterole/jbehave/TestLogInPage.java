@@ -9,8 +9,8 @@ import org.jbehave.core.annotations.When;
 
 public class TestLogInPage {
 
-    private String login = "sever";
-    private String password = "111111";
+    public static final String LOGIN = "sever";
+    public static final String PASSWORD = "111111";
 
     @Steps
     private ProfiteroleHomeSteps profiteroleHomeSteps;
@@ -30,12 +30,12 @@ public class TestLogInPage {
 
     @When("the user enters Login")
     public void whenUserEntersLogin(){
-        logInProfiteroleSteps.enterLoginIntoLoginField(login);
+        logInProfiteroleSteps.enterLoginIntoLoginField(LOGIN);
     }
 
-    @When("the user enters password")
+    @When("the user enters Password")
     public void whenUserEntersPassword(){
-        logInProfiteroleSteps.enterPasswordIntoPasswordField(password);
+        logInProfiteroleSteps.enterPasswordIntoPasswordField(PASSWORD);
     }
 
     @When("the user click on Enter Button in Entry Window")
@@ -44,7 +44,7 @@ public class TestLogInPage {
     }
 
     @Then("the user should see the page with words 'Wellcome on our site'")
-    public void thenUserShouldSeeWelcomOnSitePage(){
+    public void thenUserShouldSeeWelcomeOnSitePage(){
         logInProfiteroleSteps.isUserWasLogIn();
     }
 

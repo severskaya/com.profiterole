@@ -31,7 +31,7 @@ public class TestChooseUkrainianCuisineInAllRecipes {
     }
 
     @Given("the user clicks on All Recipes Button")
-    public void givenClicksallRecipesButton(){
+    public void givenClicksAllRecipesButton(){
         recipesDropDownSteps.clickAllRecipesButton();
     }
 
