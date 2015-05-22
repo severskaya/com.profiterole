@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.*;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 
 public class ProfiteroleHomeSteps extends ScenarioSteps {
@@ -43,7 +43,7 @@ public class ProfiteroleHomeSteps extends ScenarioSteps {
     }
 
     @Step
-    public void assertThatkAboutUsPageWasOpened(){
-        Assert.assertEquals("Страница 'О нас' не была открыта", aboutUsProfiterolePageInformation, profiterolePage.getAboutUsProfiterolePageInformation().getText());
+    public void assertThatAboutUsPageWasOpened(){
+        assertEquals("Страница 'О нас' не была открыта", aboutUsProfiterolePageInformation, profiterolePage.getAboutUsProfiterolePageInformation().getValue());
     }
 }

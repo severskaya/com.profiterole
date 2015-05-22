@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.LogInProfiterolePage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 
 public class LogInProfiteroleSteps extends ScenarioSteps {
@@ -28,6 +28,6 @@ public class LogInProfiteroleSteps extends ScenarioSteps {
 
     @Step
     public void assertThatUserWasLogIn(){
-        Assert.assertEquals("Регистрация пользователя прошла неуспешно", infromationFromAfterLoginPage, logInProfiterolePage.getInformationFromAfterLoginPage().getText());
+        assertEquals("Регистрация пользователя прошла неуспешно", infromationFromAfterLoginPage, logInProfiterolePage.getInformationFromAfterLoginPage().getValue());
     }
 }

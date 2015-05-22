@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.RecipesDropDownPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 public class RecipesDropDownSteps extends ScenarioSteps {
 
@@ -23,11 +23,11 @@ public class RecipesDropDownSteps extends ScenarioSteps {
 
     @Step
     public void assertThatCuisinesAreVisibleForUser() {
-        Assert.assertEquals("Кухни не видны пользователю", informationFromAllCuisinesPage, recipesDropDownPage.getTextFromAllCuisinePage().getText());
+        assertEquals("Кухни не видны пользователю", informationFromAllCuisinesPage, recipesDropDownPage.getTextFromAllCuisinePage().getText());
     }
 
     @Step
     public void assertThatCreateRecipePageIsVisible() {
-        Assert.assertEquals("Страница с созданием рецептов не видна", informationFromCreateRecipePage, recipesDropDownPage.getTextFromCreateRecipeProfiterolePage().getText());
+        assertEquals("Страница с созданием рецептов не видна", informationFromCreateRecipePage, recipesDropDownPage.getTextFromCreateRecipeProfiterolePage().getValue());
     }
 }

@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.CreateMenuDropDownPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 
 public class CreateMenuDropDownSteps extends ScenarioSteps {
@@ -12,28 +12,27 @@ public class CreateMenuDropDownSteps extends ScenarioSteps {
     private String countOfVariablesFromCreatemenuOnDay = "3";
     CreateMenuDropDownPage createMenuDropDownPage;
 
-//    private String expectedXPath = "//div[@class = 'btn-group no-outline']/child::*";
+
 
     @Step
-    public void clickMenuOnADayButton(){
+    public void clickMenuOnADayButton() {
         createMenuDropDownPage.getMenuOnADayInDropDownList().click();
     }
 
     @Step
-    public void clickMenuOnaWeekButton(){
+    public void clickMenuOnaWeekButton() {
         createMenuDropDownPage.getMenuOnAWeekInDropDownList().click();
     }
 
     @Step
-    public void assertThatCreateMenuOnADayPageIsVisible(){
+    public void assertThatCreateMenuOnADayPageIsVisible() {
 
-        Assert.assertEquals("Страница Создать меню на день не прогрузилась", countOfVariablesFromCreatemenuOnDay, createMenuDropDownPage.getCountOfVariablesFromCreateMenuOnDayPage());
+        assertEquals("Страница Создать меню на день не прогрузилась", countOfVariablesFromCreatemenuOnDay, createMenuDropDownPage.getCountOfVariablesFromCreateMenuOnDayPage().getValue());
     }
 
     @Step
-    public void assertThatPageWithSevenDaysIsVisible(){
+    public void assertThatPageWithSevenDaysIsVisible() {
 
-        Assert.assertEquals("Страница 7 дней недели не прогрузилась", countOfDaysFromCreateMenuOnWeek, createMenuDropDownPage.getCountOfDaysFromCreateMenuOnWeek());
+       assertEquals("Страница 7 дней недели не прогрузилась", countOfDaysFromCreateMenuOnWeek, createMenuDropDownPage.getCountOfDaysFromCreateMenuOnWeek().getValue());
     }
-
 }

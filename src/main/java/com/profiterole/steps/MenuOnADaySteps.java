@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.MenuOnADayPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 
 public class MenuOnADaySteps extends ScenarioSteps {
@@ -28,6 +28,6 @@ public class MenuOnADaySteps extends ScenarioSteps {
 
     @Step
     public void assertThatBreakfastCreateMenuOnADayPageIsVisible(){
-        Assert.assertEquals("Страница с завтраками в 'Создать меню на день' не была прогружена", informationFromBreakfastCreateMenuOnDay, menuOnADayPage.getInformationFromBreakfastCreateMenuOnDay().getText());
+        assertEquals("Страница с завтраками в 'Создать меню на день' не была прогружена", informationFromBreakfastCreateMenuOnDay, menuOnADayPage.getInformationFromBreakfastCreateMenuOnDay().getValue());
     }
 }

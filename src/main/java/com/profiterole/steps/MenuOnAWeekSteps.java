@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.MenuOnAWeekPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 
 public class MenuOnAWeekSteps extends ScenarioSteps {
@@ -62,6 +62,6 @@ public class MenuOnAWeekSteps extends ScenarioSteps {
 
     @Step
     public void assertThatCreateMenuOnAWeekPageIsVisible(){
-        Assert.assertEquals("Страница Создать меню на неделю не прогрузилась", countOfDaysFromMenuOnWeekPage, menuOnAWeekPage.getCountOfDaysFromMenuOnWeek());
+        assertEquals("Страница Создать меню на неделю не прогрузилась", countOfDaysFromMenuOnWeekPage, menuOnAWeekPage.getCountOfDaysFromMenuOnWeek().getValue());
     }
 }

@@ -3,7 +3,7 @@ package com.profiterole.steps;
 import com.profiterole.pages.ProfiterolesCuisinePage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import org.junit.Assert;
+import static org.junit.Assert.*;
 
 
 public class ProfiteroleCuisineSteps extends ScenarioSteps {
@@ -27,21 +27,22 @@ public class ProfiteroleCuisineSteps extends ScenarioSteps {
 
     @Step
     public void assertThatUkrainianDishesPageIsVisible(){
-        Assert.assertEquals("Страница 'Украинская кухня' не прогрузилась", informationFromUkrainianDishesPage, profiterolesCuisinePage.getInformationFromUkrainianDishesPage().getText());
+        assertEquals("Страница 'Украинская кухня' не прогрузилась", informationFromUkrainianDishesPage, profiterolesCuisinePage.getInformationFromUkrainianDishesPage().getValue());
     }
 
     @Step
     public void assertThatMexicoDishesPageIsVisible(){
-        Assert.assertEquals("Страница 'Мексиканская кухня' не прогрузилась", informationFromMexicoDishesPage, profiterolesCuisinePage.getInformationFromMexicoDishesPage().getText());
+        assertEquals("Страница 'Мексиканская кухня' не прогрузилась", informationFromMexicoDishesPage, profiterolesCuisinePage.getInformationFromMexicoDishesPage().getValue());
     }
 
     @Step
     public void assertTahtFrenchDishesPageisVisible(){
-        Assert.assertEquals("Страница 'Французская кухня' не прогрузилась", informationFromFrenchDishesPage, profiterolesCuisinePage.getInformationFromFrenchDishesPage().getText());
+        assertEquals("Страница 'Французская кухня' не прогрузилась", informationFromFrenchDishesPage, profiterolesCuisinePage.getInformationFromFrenchDishesPage().getValue());
     }
 
     @Step
     public void assertThatUkrainianSnacksIsVisible(){
-        Assert.assertEquals("Страница 'Закуски Украинской кухни' не прогрузилась", informationFromUkrainianSnackspage, profiterolesCuisinePage.getInformationFromUkrainiansnacksPage().getText());
+        assertEquals("Страница 'Закуски Украинской кухни' не прогрузилась", informationFromUkrainianSnackspage, profiterolesCuisinePage.getInformationFromUkrainiansnacksPage().getValue());
     }
+
 }
