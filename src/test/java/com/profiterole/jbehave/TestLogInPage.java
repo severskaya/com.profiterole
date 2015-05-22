@@ -45,7 +45,7 @@ public class TestLogInPage {
 
     @Then("the user should see the page with words 'Wellcome on our site'")
     public void thenUserShouldSeeWelcomeOnSitePage(){
-        logInProfiteroleSteps.isUserWasLogIn();
+        logInProfiteroleSteps.assertThatUserWasLogIn();
     }
 
 }

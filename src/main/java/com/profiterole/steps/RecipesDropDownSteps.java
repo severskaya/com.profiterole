@@ -22,12 +22,12 @@ public class RecipesDropDownSteps extends ScenarioSteps {
     }
 
     @Step
-    public void isCuisinesVisibleForUser() {
-        Assert.assertEquals(informationFromAllCuisinesPage, recipesDropDownPage.getTextFromAllCuisinePage());
+    public void assertThatCuisinesAreVisibleForUser() {
+        Assert.assertEquals("Кухни не видны пользователю", informationFromAllCuisinesPage, recipesDropDownPage.getTextFromAllCuisinePage().getText());
     }
 
     @Step
-    public void isCreateRecipePageVisible() {
-        Assert.assertEquals(informationFromCreateRecipePage, recipesDropDownPage.getTextFromCreateRecipeProfiterolePage());
+    public void assertThatCreateRecipePageIsVisible() {
+        Assert.assertEquals("Страница с созданием рецептов не видна", informationFromCreateRecipePage, recipesDropDownPage.getTextFromCreateRecipeProfiterolePage().getText());
     }
 }

@@ -41,7 +41,7 @@ public class TestChooseFrenchCuisineInAllRecipes {
 
     @Then("the user should see the page with all French dishes")
     public void thenShouldSeePageWithAllFrenchDishes(){
-        profiteroleCuisineSteps.isFrenchDishesPageVisible();
+        profiteroleCuisineSteps.assertTahtFrenchDishesPageisVisible();
     }
 
 }

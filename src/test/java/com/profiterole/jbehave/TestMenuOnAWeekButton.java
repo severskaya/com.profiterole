@@ -32,7 +32,7 @@ public class TestMenuOnAWeekButton {
 
     @Then("the user should see the page with seven choices 'Mo', 'Tu','We', 'Th', 'Fr', 'Sa', 'Su'")
     public void thenShouldSeePageWithSevenDays(){
-        createMenuDropDownSteps.isPageWithSevenDaysVisible();
+        createMenuDropDownSteps.assertThatPageWithSevenDaysIsVisible();
     }
 
 }

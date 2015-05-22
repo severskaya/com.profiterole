@@ -27,7 +27,7 @@ public class MenuOnADaySteps extends ScenarioSteps {
     }
 
     @Step
-    public void isBreakfasrCreateMenuOnADayPageVisible(){
-        Assert.assertEquals(informationFromBreakfastCreateMenuOnDay, menuOnADayPage.getInformationFromBreakfastCreateMenuOnDay());
+    public void assertThatBreakfastCreateMenuOnADayPageIsVisible(){
+        Assert.assertEquals("Страница с завтраками в 'Создать меню на день' не была прогружена", informationFromBreakfastCreateMenuOnDay, menuOnADayPage.getInformationFromBreakfastCreateMenuOnDay().getText());
     }
 }

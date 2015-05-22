@@ -42,6 +42,6 @@ public class TestChooseUkrainianCuisineInAllRecipes {
 
     @Then("the user should see the page with all Ukrainian dishes")
     public void thenShouldSeeUkrainianDishesPage(){
-        profiteroleCuisineSteps.isUkrainianDishesPageVisible();
+        profiteroleCuisineSteps.assertThatUkrainianDishesPageIsVisible();
     }
 }

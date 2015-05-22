@@ -12,7 +12,7 @@ public class CreateMenuDropDownSteps extends ScenarioSteps {
     private String countOfVariablesFromCreatemenuOnDay = "3";
     CreateMenuDropDownPage createMenuDropDownPage;
 
-    private String expectedXPath = "//div[@class = 'btn-group no-outline']/child::*";
+//    private String expectedXPath = "//div[@class = 'btn-group no-outline']/child::*";
 
     @Step
     public void clickMenuOnADayButton(){
@@ -25,15 +25,15 @@ public class CreateMenuDropDownSteps extends ScenarioSteps {
     }
 
     @Step
-    public void isCreateMenuOnADayPageVisible(){
+    public void assertThatCreateMenuOnADayPageIsVisible(){
 
-        Assert.assertEquals(countOfVariablesFromCreatemenuOnDay, createMenuDropDownPage.getCountOfVariablesFromCreateMenuOnDayPage());
+        Assert.assertEquals("Страница Создать меню на день не прогрузилась", countOfVariablesFromCreatemenuOnDay, createMenuDropDownPage.getCountOfVariablesFromCreateMenuOnDayPage());
     }
 
     @Step
-    public void isPageWithSevenDaysVisible(){
+    public void assertThatPageWithSevenDaysIsVisible(){
 
-        Assert.assertEquals(countOfDaysFromCreateMenuOnWeek, createMenuDropDownPage.getCountOfDaysFromCreateMenuOnWeek());
+        Assert.assertEquals("Страница 7 дней недели не прогрузилась", countOfDaysFromCreateMenuOnWeek, createMenuDropDownPage.getCountOfDaysFromCreateMenuOnWeek());
     }
 
 }

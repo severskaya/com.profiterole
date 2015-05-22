@@ -41,6 +41,6 @@ public class TestBreakfastButtonMenuOnADay {
 
     @Then("the user should see the page where he can create his own menu on a day")
     public void thenShouldSeeCreateRecipePage(){
-        menuOnADaySteps.isBreakfasrCreateMenuOnADayPageVisible();
+        menuOnADaySteps.assertThatBreakfastCreateMenuOnADayPageIsVisible();
     }
 }

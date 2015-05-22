@@ -33,7 +33,7 @@ public class TestMenuOnDayButton {
 
     @Then("the user should see the page with three choices 'Breakfast', 'Dinner' and 'Supper'")
     public void thenShouldSeeBreakfastDinnerSupperPage(){
-        createMenuDropDownSteps.isCreateMenuOnADayPageVisible();
+        createMenuDropDownSteps.assertThatCreateMenuOnADayPageIsVisible();
     }
 
 }

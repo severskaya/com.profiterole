@@ -42,7 +42,7 @@ public class TestChooseMexicoCuisineInAllRecipes {
 
     @Then("the user should see the page with all Mexico dishes")
     public void thenShouldSeeMexicoDishesPage(){
-        profiteroleCuisineSteps.isMexicoDishesPageVisible();
+        profiteroleCuisineSteps.assertThatMexicoDishesPageIsVisible();
     }
 
 }

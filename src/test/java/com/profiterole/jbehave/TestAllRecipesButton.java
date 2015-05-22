@@ -33,7 +33,7 @@ public class TestAllRecipesButton {
 
     @Then("the user should see all cuisines")
     public void thenUserShouldSeeAllCuisines(){
-        recipesDropDownSteps.isCuisinesVisibleForUser();
+        recipesDropDownSteps.assertThatCuisinesAreVisibleForUser();
     }
 
 }

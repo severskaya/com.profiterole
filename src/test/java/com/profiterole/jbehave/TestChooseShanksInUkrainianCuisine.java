@@ -46,7 +46,7 @@ public class TestChooseShanksInUkrainianCuisine {
 
     @Then("he should see list with Ukrainian recipes")
     public void thenShouldSeeListWithUkrainianRecipes(){
-        profiteroleCuisineSteps.isUkrainianSnacksVisible();
+        profiteroleCuisineSteps.assertThatUkrainianSnacksIsVisible();
     }
 
 }

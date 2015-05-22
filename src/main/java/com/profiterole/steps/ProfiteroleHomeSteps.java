@@ -43,7 +43,7 @@ public class ProfiteroleHomeSteps extends ScenarioSteps {
     }
 
     @Step
-    public void iskAboutUsPageWasOpened(){
-        Assert.assertEquals(aboutUsProfiterolePageInformation, profiterolePage.getAboutUsProfiterolePageInformation());
+    public void assertThatkAboutUsPageWasOpened(){
+        Assert.assertEquals("Страница 'О нас' не была открыта", aboutUsProfiterolePageInformation, profiterolePage.getAboutUsProfiterolePageInformation().getText());
     }
 }

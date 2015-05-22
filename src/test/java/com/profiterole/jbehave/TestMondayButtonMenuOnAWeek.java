@@ -2,7 +2,6 @@ package com.profiterole.jbehave;
 
 
 import com.profiterole.steps.CreateMenuDropDownSteps;
-import com.profiterole.steps.MenuOnADaySteps;
 import com.profiterole.steps.MenuOnAWeekSteps;
 import com.profiterole.steps.ProfiteroleHomeSteps;
 import net.thucydides.core.annotations.Steps;
@@ -48,6 +47,6 @@ public class TestMondayButtonMenuOnAWeek {
 
     @Then("the user shoild see the page where he can create his own menu on a week")
     public void thenShouldSeeCreateMenuOnAWeekPage(){
-        menuOnAWeekSteps.isCreateMenuOnAWeekPageVisible();
+        menuOnAWeekSteps.assertThatCreateMenuOnAWeekPageIsVisible();
     }
 }

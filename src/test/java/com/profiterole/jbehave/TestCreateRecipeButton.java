@@ -33,7 +33,7 @@ public class TestCreateRecipeButton {
 
     @Then("the user should see the page where he can createhis own recipe")
     public void thenShouldSeeCreateRecipePage(){
-        recipesDropDownSteps.isCreateRecipePageVisible();
+        recipesDropDownSteps.assertThatCreateRecipePageIsVisible();
     }
 
 }
