@@ -44,6 +44,6 @@ public class ProfiteroleHomeSteps extends ScenarioSteps {
 
     @Step
     public void assertThatAboutUsPageWasOpened(){
-        assertEquals("Страница 'О нас' не была открыта", aboutUsProfiterolePageInformation, profiterolePage.getAboutUsProfiterolePageInformation().getValue());
+        assertEquals("Страница 'О нас' не была открыта", aboutUsProfiterolePageInformation, profiterolePage.getAboutUsProfiterolePageInformation().getText());
     }
 }

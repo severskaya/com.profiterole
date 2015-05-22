@@ -27,22 +27,22 @@ public class ProfiteroleCuisineSteps extends ScenarioSteps {
 
     @Step
     public void assertThatUkrainianDishesPageIsVisible(){
-        assertEquals("Страница 'Украинская кухня' не прогрузилась", informationFromUkrainianDishesPage, profiterolesCuisinePage.getInformationFromUkrainianDishesPage().getValue());
+        assertEquals("Страница 'Украинская кухня' не прогрузилась", informationFromUkrainianDishesPage, profiterolesCuisinePage.getInformationFromUkrainianDishesPage().getText());
     }
 
     @Step
     public void assertThatMexicoDishesPageIsVisible(){
-        assertEquals("Страница 'Мексиканская кухня' не прогрузилась", informationFromMexicoDishesPage, profiterolesCuisinePage.getInformationFromMexicoDishesPage().getValue());
+        assertEquals("Страница 'Мексиканская кухня' не прогрузилась", informationFromMexicoDishesPage, profiterolesCuisinePage.getInformationFromMexicoDishesPage().getText());
     }
 
     @Step
     public void assertTahtFrenchDishesPageisVisible(){
-        assertEquals("Страница 'Французская кухня' не прогрузилась", informationFromFrenchDishesPage, profiterolesCuisinePage.getInformationFromFrenchDishesPage().getValue());
+        assertEquals("Страница 'Французская кухня' не прогрузилась", informationFromFrenchDishesPage, profiterolesCuisinePage.getInformationFromFrenchDishesPage().getText());
     }
 
     @Step
     public void assertThatUkrainianSnacksIsVisible(){
-        assertEquals("Страница 'Закуски Украинской кухни' не прогрузилась", informationFromUkrainianSnackspage, profiterolesCuisinePage.getInformationFromUkrainiansnacksPage().getValue());
+        assertEquals("Страница 'Закуски Украинской кухни' не прогрузилась", informationFromUkrainianSnackspage, profiterolesCuisinePage.getInformationFromUkrainiansnacksPage().getText());
     }
 
 }

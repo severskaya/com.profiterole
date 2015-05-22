@@ -56,6 +56,7 @@
             <version>3.3</version>
             <type>maven-plugin</type>
         </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -64,28 +65,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
-                    <skip>true</skip>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18.1</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/Given*.java</include>
-                        <include>**/When*.java</include>
-                        <include>**/Then*.java</include>
-                        <include>**/*Story.java</include>
-                    </includes>
-                    <argLine>-Xmx512m</argLine>
-                    <parallel>classes</parallel>
-                    <systemPropertyVariables>
-                        <webdriver.driver>${webdriver.driver}</webdriver.driver>
-                        <webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>
-                    </systemPropertyVariables>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>

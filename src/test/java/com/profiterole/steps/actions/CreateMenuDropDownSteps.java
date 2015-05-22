@@ -27,12 +27,12 @@ public class CreateMenuDropDownSteps extends ScenarioSteps {
     @Step
     public void assertThatCreateMenuOnADayPageIsVisible() {
 
-        assertEquals("Страница Создать меню на день не прогрузилась", countOfVariablesFromCreatemenuOnDay, createMenuDropDownPage.getCountOfVariablesFromCreateMenuOnDayPage().getValue());
+        assertEquals("Страница Создать меню на день не прогрузилась", countOfVariablesFromCreatemenuOnDay, createMenuDropDownPage.getCountOfVariablesFromCreateMenuOnDayPage().getText());
     }
 
     @Step
     public void assertThatPageWithSevenDaysIsVisible() {
 
-       assertEquals("Страница 7 дней недели не прогрузилась", countOfDaysFromCreateMenuOnWeek, createMenuDropDownPage.getCountOfDaysFromCreateMenuOnWeek().getValue());
+       assertEquals("Страница 7 дней недели не прогрузилась", countOfDaysFromCreateMenuOnWeek, createMenuDropDownPage.getCountOfDaysFromCreateMenuOnWeek().getText());
     }
 }

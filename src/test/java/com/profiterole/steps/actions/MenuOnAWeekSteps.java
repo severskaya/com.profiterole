@@ -62,6 +62,6 @@ public class MenuOnAWeekSteps extends ScenarioSteps {
 
     @Step
     public void assertThatCreateMenuOnAWeekPageIsVisible(){
-        assertEquals("Страница Создать меню на неделю не прогрузилась", countOfDaysFromMenuOnWeekPage, menuOnAWeekPage.getCountOfDaysFromMenuOnWeek().getValue());
+        assertEquals("Страница Создать меню на неделю не прогрузилась", countOfDaysFromMenuOnWeekPage, menuOnAWeekPage.getCountOfDaysFromMenuOnWeek().getText());
     }
 }

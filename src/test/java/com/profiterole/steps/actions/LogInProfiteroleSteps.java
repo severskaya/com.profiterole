@@ -28,6 +28,6 @@ public class LogInProfiteroleSteps extends ScenarioSteps {
 
     @Step
     public void assertThatUserWasLogIn(){
-        assertEquals("Регистрация пользователя прошла неуспешно", infromationFromAfterLoginPage, logInProfiterolePage.getInformationFromAfterLoginPage().getValue());
+        assertEquals("Регистрация пользователя прошла неуспешно", infromationFromAfterLoginPage, logInProfiterolePage.getInformationFromAfterLoginPage().getText());
     }
 }
