@@ -23,5 +23,4 @@ public class RecipesDropDownPage extends PageObject {
     public WebElementFacade getTextFromCreateRecipeProfiterolePage(){
         return find(By.xpath("//h1[contains(text(), 'Создать рецепт')]"));
     }
-
 }
